@@ -35,13 +35,143 @@
     display: flex;
     justify-content: center;
     gap: 1.9rem;
+
 }
 
 .produtoImgsTn img {
     width: 90px;
     border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.produtoImgsTn img:hover {
+    opacity: 0.5;
+}
+
+.produtoImgsTn img:focus {
+    opacity: 0.5;
+    outline: var(--laranja) solid 2px;
 }
 
 .produtoDescricao {
     flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.produtoDescricao h3 {
+    flex-basis: 10%;
+    color: var(--laranja);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.produtoDescricao h1 {
+    flex-basis: 20%;
+    color: var(--preto);
+    font-size: 2.8rem;
+    line-height: 50px;
+}
+
+.produtoDescricaoText {
+    flex-basis: 20%;
+    font-weight: 500;
+    color: var(--cinza);
+    width: 430px;
+    text-align: justify;
+}
+
+.produtoDescricaoDescContainer {
+    display: flex;
+    align-items: center;
+}
+
+.produtoDescricaoDesc {
+    color: var(--laranja);
+    font-weight: 900;
+    background-color: var(--laranja-claro);
+    border-radius: 5px;
+    padding: 0 8px;
+    margin-left: 20px;
+}
+
+.produtoDescricao h2 {
+    color: var(--preto);
+    font-size: 2rem;
+
+}
+
+.produtoDescricao h4 {
+    color: var(--cinza);
+    opacity: 0.5;
+    text-decoration-line: line-through;
+}
+
+.produtoDescricaoMaisMenosContainer {
+    display: flex;
+    margin-top: 30px;
+}
+
+.produtoDescricaoMaisMenos {
+    display: flex;
+    align-items: center;
+}
+
+.produtoDescricaoMaisMenos button {
+    border: none;
+    background-color: var(--azul-claro);
+    color: var(--laranja);
+    font-weight: 900;
+    font-size: 1.8rem;
+    height: 60px;
+    padding: 0 10px;
+}
+
+.produtoDescricaoMaisMenos button:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.produtoDescricaoMaisMenos button:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.produtoDescricaoMaisMenos input {
+    border: none;
+    background-color: var(--azul-claro);
+    color: var(--preto);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 60px;
+    width: 70px;
+
+}
+
+.produtoDescricaoAddCar {
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 100px;
+    font-size: 1.3rem;
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.produtoDescricaoAddCar img {
+    margin-right: 20px;
+
 }

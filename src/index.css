@@ -7,6 +7,9 @@
 
 :root {
   --preto: #000;
+  --branco: #fff;
   --cinza: #69707d;
   --laranja: #ff7d1b;
+  --laranja-claro: #faf0e7;
+  --azul-claro: #f7f8fd;
 }

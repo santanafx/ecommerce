@@ -24,6 +24,8 @@ export const ContextProvider = ({ children }) => {
             imgTn2: imageSapato2Tn,
             imgTn3: imageSapato3Tn,
             imgTn4: imageSapato4Tn,
+            preco: 250,
+            desconto: 50,
         },
     ]);
 
