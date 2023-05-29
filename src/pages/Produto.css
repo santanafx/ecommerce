@@ -7,13 +7,41 @@
 
 .produtoContainer {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     width: 1115px;
-    height: 480px;
+    /* height: 480px; */
 }
 
 .produtoImgs {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+    flex-basis: 50%;
+}
+
+.produtoImgsMain {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.produtoImgsMain img {
+    border-radius: 20px;
+    width: 450px;
+}
+
+.produtoImgsTn {
+    display: flex;
+    justify-content: center;
+    gap: 1.9rem;
+}
+
+.produtoImgsTn img {
+    width: 90px;
+    border-radius: 20px;
+}
+
+.produtoDescricao {
+    flex-basis: 50%;
 }
