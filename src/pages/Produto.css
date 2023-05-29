@@ -12,3 +12,8 @@
     width: 1115px;
     height: 480px;
 }
+
+.produtoImgs {
+    display: flex;
+    flex-direction: column;
+}
