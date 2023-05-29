@@ -1,0 +1,14 @@
+.produtoContainerBg {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+.produtoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1115px;
+    height: 480px;
+}
