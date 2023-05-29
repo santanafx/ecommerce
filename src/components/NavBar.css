@@ -1,0 +1,64 @@
+.navBarContainerBg {
+    display: flex;
+    justify-content: center;
+}
+
+.navBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--cinza);
+    width: 1115px;
+    height: 115px;
+}
+
+.navBarContainer a {
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+.navBarLogo {
+    flex-basis: 20%;
+}
+
+.navBarMenu {
+    flex-basis: 60%;
+    color: var(--cinza);
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navBarMenu div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    height: 100%;
+}
+
+.navBarMenu div:hover {
+    border-bottom: 3px solid var(--laranja);
+}
+
+.navBarUsuario {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navBarUsuario img:nth-child(1) {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.navBarUsuario img:nth-child(2) {
+    max-width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.navBarUsuario img:nth-child(2):hover {
+    outline: var(--laranja) solid 2px;
+}
