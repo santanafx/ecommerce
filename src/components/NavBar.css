@@ -46,19 +46,39 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
 }
 
-.navBarUsuario img:nth-child(1) {
+.navBarUsuarioCarrinho {
+    margin-right: 40px;
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.navBarUsuarioCarrinho img {
     margin-right: 40px;
     cursor: pointer;
 }
 
-.navBarUsuario img:nth-child(2) {
+.navBarUsuarioCarrinho span {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    font-size: 0.55rem;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-weight: 500;
+}
+
+.navBarUsuarioAvatar {
     max-width: 50px;
     cursor: pointer;
     border-radius: 50%;
 }
 
-.navBarUsuario img:nth-child(2):hover {
+.navBarUsuarioAvatar:hover {
     outline: var(--laranja) solid 2px;
 }

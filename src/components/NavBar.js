@@ -35,8 +35,11 @@ export const NavBar = () => {
                     <div><Link to='/'>Contact</Link></div>
                 </div>
                 <div className='navBarUsuario'>
-                    <img onClick={() => { handleClickCart() }} src={cart} alt="Carrinho de compras" />
-                    <img onClick={() => { handleClickProfile() }} src={avatar} alt="Avatar" />
+                    <div className='navBarUsuarioCarrinho'>
+                        <img onClick={() => { handleClickCart() }} src={cart} alt="Carrinho de compras" />
+                        {itensCarrinho !== 0 && itensCarrinho !== '' ? <span>{itensCarrinho}</span> : ''}
+                    </div>
+                    <img className='navBarUsuarioAvatar' onClick={() => { handleClickProfile() }} src={avatar} alt="Avatar" />
                 </div>
             </nav>
         </section>
