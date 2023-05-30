@@ -29,7 +29,9 @@ export const ContextProvider = ({ children }) => {
         },
     ]);
 
-    return (<Context.Provider value={{ dataBase }}>
+    const [itensCarrinho, setItensCarrinho] = React.useState('');
+
+    return (<Context.Provider value={{ dataBase, itensCarrinho, setItensCarrinho }}>
         {children}
     </Context.Provider>
 

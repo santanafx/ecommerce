@@ -3,10 +3,11 @@ import './Produto.css'
 import { useParams } from 'react-router-dom'
 import { Context } from '../context/globalContext'
 import cart from '../images/icon-cart-copy.png'
+import { Botao } from '../components/Botao'
 
 export const Produto = () => {
 
-    const { dataBase } = React.useContext(Context);
+    const { dataBase, setItensCarrinho, itensCarrinho } = React.useContext(Context);
     const [produtoSelecionado, setProdutoSelecionado] = React.useState('');
     const [selectImg, setSelectImg] = React.useState('');
     const [counter, setCounter] = React.useState(0);
@@ -31,12 +32,19 @@ export const Produto = () => {
 
     const handleCounterSub = () => {
         setCounter(counter - 1);
+        if (counter <= 0) {
+            setCounter(0)
+        }
+    }
+
+    const handleAddCarrinho = () => {
+        setItensCarrinho(counter);
     }
 
     return (
         <section className='produtoContainerBg'>
             <div className='produtoContainer'>
-                {console.log(produtoSelecionado)}
+                {/* {console.log(produtoSelecionado)} */}
                 <div className='produtoImgs'>
                     <div className='produtoImgsMain'>
                         <img src={selectImg} alt="Imagem do produto" />
@@ -63,7 +71,8 @@ export const Produto = () => {
                             <input type="text" disabled value={counter} />
                             <button onClick={() => handleCounterAdd()}>+</button>
                         </div>
-                        <button className='produtoDescricaoAddCar'><img src={cart} alt="Imagem do carrinho" /> Add to cart</button>
+                        <button onClick={() => { handleAddCarrinho() }} className='produtoDescricaoAddCar'><img src={cart} alt="Imagem do carrinho" /> Add to cart</button>
+
                     </div>
                 </div>
             </div>

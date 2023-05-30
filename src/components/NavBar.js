@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './NavBar.css'
 import { Link } from 'react-router-dom'
 import logo from '../images/logo.svg'
 import cart from '../images/icon-cart.svg'
 import avatar from '../images/image-avatar.png'
+import { Context } from '../context/globalContext'
 
 export const NavBar = () => {
+
+    const { itensCarrinho } = useContext(Context);
+
+    React.useEffect(() => {
+        console.log(itensCarrinho)
+    }, [itensCarrinho])
 
     const handleClickCart = () => {
         console.log('Clicou carrinho')
