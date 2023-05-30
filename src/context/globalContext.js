@@ -16,6 +16,8 @@ export const ContextProvider = ({ children }) => {
     const [dataBase, setDataBase] = React.useState([
         {
             id: 'sapato',
+            edicao: 'Fall Limited Edition Sneakers',
+            descricao: 'These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they ll withstang everything the weather can offer.',
             img1: imageSapato1,
             img2: imageSapato2,
             img3: imageSapato3,
@@ -30,8 +32,10 @@ export const ContextProvider = ({ children }) => {
     ]);
 
     const [itensCarrinho, setItensCarrinho] = React.useState('');
+    const [produtosCarrinho, setProdutosCarrinho] = React.useState([]);
+    const [produtoSelecionado, setProdutoSelecionado] = React.useState('');
 
-    return (<Context.Provider value={{ dataBase, itensCarrinho, setItensCarrinho }}>
+    return (<Context.Provider value={{ dataBase, itensCarrinho, setItensCarrinho, produtosCarrinho, setProdutosCarrinho, produtoSelecionado, setProdutoSelecionado }}>
         {children}
     </Context.Provider>
 

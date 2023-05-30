@@ -82,3 +82,53 @@
 .navBarUsuarioAvatar:hover {
     outline: var(--laranja) solid 2px;
 }
+
+.navBarUsuarioCarrinhoDropDownMenu {
+
+    position: absolute;
+    background-color: var(--branco);
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(77, 77, 77, 0.3);
+    width: 360px;
+    height: auto;
+    font-size: 0.8rem;
+}
+
+.navBarUsuarioCarrinhoDropDownMenu h4 {
+
+    margin: 15px 30px;
+    font-size: 1.1rem;
+}
+
+.DropDownMenuCarrinhoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+
+}
+
+.DropDownMenuCarrinhoText {
+    display: flex;
+    flex-direction: column;
+    color: var(--cinza);
+    font-size: 0.8rem;
+}
+
+.DropDownMenuCarrinhoImgTn {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.DropDownMenuCarrinhoDelete {
+    cursor: pointer;
+}
+
+.DropDownMenuBotao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
