@@ -7,10 +7,12 @@ import iconDelete from '../images/icon-delete.svg'
 import avatar from '../images/image-avatar.png'
 import { Context } from '../context/globalContext'
 import { Botao } from './Botao'
+// import { Item } from './Item'
 
 export const NavBar = () => {
 
     const { itensCarrinho, produtoSelecionado } = useContext(Context);
+    const [active, setActive] = React.useState(false);
 
     const precoComDesconto = (parseFloat(produtoSelecionado.preco * produtoSelecionado.desconto) / 100).toFixed(2);
     let precoFinal = parseFloat(precoComDesconto * itensCarrinho).toFixed(2);
@@ -22,7 +24,8 @@ export const NavBar = () => {
     }, [itensCarrinho])
 
     const handleClickCart = () => {
-        console.log('Clicou carrinho')
+        setActive(!active);
+        console.log(active)
     }
 
     const handleClickProfile = () => {
@@ -45,7 +48,9 @@ export const NavBar = () => {
                     <div className='navBarUsuarioCarrinho'>
                         <img onClick={() => { handleClickCart() }} src={cart} alt="Carrinho de compras" />
                         {itensCarrinho !== 0 && itensCarrinho !== '' ? <span>{itensCarrinho}</span> : ''}
-                        <div className='navBarUsuarioCarrinhoDropDownMenu'>
+
+
+                        {active ? <div className='navBarUsuarioCarrinhoDropDownMenu'>
                             <h4>Cart</h4>
                             <hr style={{ color: 'var(--cinza)' }} />
                             <div className='DropDownMenuCarrinhoImg'>
@@ -56,10 +61,11 @@ export const NavBar = () => {
                                 </div>
                                 <img className="DropDownMenuCarrinhoDelete" src={iconDelete} alt="Icone de deletar item do carrinho." />
                             </div>
+                            {/* {Array.forEach((element)=>{<Item key={element.id} prop1={element.x}/>})} */}
                             <div className="DropDownMenuBotao">
                                 <Botao text={'Checkout'} />
                             </div>
-                        </div>
+                        </div> : ''}
                     </div>
                     <img className='navBarUsuarioAvatar' onClick={() => { handleClickProfile() }} src={avatar} alt="Avatar" />
                 </div>
