@@ -28,14 +28,63 @@ export const ContextProvider = ({ children }) => {
             imgTn4: imageSapato4Tn,
             preco: 250,
             desconto: 50,
+            quantidade: 0,
+        },
+        {
+            id: 'mochila',
+            edicao: 'Mochila top',
+            descricao: 'teste mochila',
+            img1: imageSapato1,
+            img2: imageSapato2,
+            img3: imageSapato3,
+            img4: imageSapato4,
+            imgTn1: imageSapato1Tn,
+            imgTn2: imageSapato2Tn,
+            imgTn3: imageSapato3Tn,
+            imgTn4: imageSapato4Tn,
+            preco: 400,
+            desconto: 50,
+            quantidade: 0,
+        },
+        {
+            id: 'bone',
+            edicao: 'Bone dos play',
+            descricao: 'teste bone',
+            img1: imageSapato1,
+            img2: imageSapato2,
+            img3: imageSapato3,
+            img4: imageSapato4,
+            imgTn1: imageSapato1Tn,
+            imgTn2: imageSapato2Tn,
+            imgTn3: imageSapato3Tn,
+            imgTn4: imageSapato4Tn,
+            preco: 100,
+            desconto: 50,
+            quantidade: 0,
         },
     ]);
 
-    const [itensCarrinho, setItensCarrinho] = React.useState('');
-    const [produtosCarrinho, setProdutosCarrinho] = React.useState([]);
+    const [itensCarrinho, setItensCarrinho] = React.useState([{
+        id: '',
+        edicao: '',
+        descricao: '',
+        img1: '',
+        img2: '',
+        img3: '',
+        img4: '',
+        imgTn1: '',
+        imgTn2: '',
+        imgTn3: '',
+        imgTn4: '',
+        preco: '',
+        desconto: '',
+        quantidade: 0,
+    },]);
     const [produtoSelecionado, setProdutoSelecionado] = React.useState('');
 
-    return (<Context.Provider value={{ dataBase, itensCarrinho, setItensCarrinho, produtosCarrinho, setProdutosCarrinho, produtoSelecionado, setProdutoSelecionado }}>
+    const [attCart, setAttCart] = React.useState(false);
+
+    return (<Context.Provider value={{ dataBase, itensCarrinho, setItensCarrinho, produtoSelecionado, setProdutoSelecionado, attCart, setAttCart }}>
         {children}
     </Context.Provider>
 

@@ -3,25 +3,30 @@ import './NavBar.css'
 import { Link } from 'react-router-dom'
 import logo from '../images/logo.svg'
 import cart from '../images/icon-cart.svg'
-import iconDelete from '../images/icon-delete.svg'
+
 import avatar from '../images/image-avatar.png'
 import { Context } from '../context/globalContext'
 import { Botao } from './Botao'
-// import { Item } from './Item'
+import { Item } from './Item'
 
 export const NavBar = () => {
 
-    const { itensCarrinho, produtoSelecionado } = useContext(Context);
+    const { itensCarrinho, produtoSelecionado, attCart } = useContext(Context);
     const [active, setActive] = React.useState(false);
-
-    const precoComDesconto = (parseFloat(produtoSelecionado.preco * produtoSelecionado.desconto) / 100).toFixed(2);
-    let precoFinal = parseFloat(precoComDesconto * itensCarrinho).toFixed(2);
+    const [quantidadeCompras, setQuantidadeCompras] = React.useState();
+    // const [copyItensCarrinho, setCopyItensCarrinho] = React.useState();
 
 
     React.useEffect(() => {
-        console.log(itensCarrinho)
+        let itensTotais = 0;
+        // setCopyItensCarrinho(itensCarrinho);
+        itensCarrinho.forEach((element) => (
+            itensTotais = itensTotais + element.quantidade))
+        setQuantidadeCompras(itensTotais);
+        // console.log(itensCarrinho)
+        // console.log(quantidadeCompras)
 
-    }, [itensCarrinho])
+    }, [attCart])
 
     const handleClickCart = () => {
         setActive(!active);
@@ -33,6 +38,7 @@ export const NavBar = () => {
     }
     return (
         <section className='navBarContainerBg'>
+            {/* {console.log(copyItensCarrinho)} */}
             <nav className='navBarContainer'>
                 <div className="navBarLogo">
                     <img src={logo} alt="Logo do site" />
@@ -47,25 +53,21 @@ export const NavBar = () => {
                 <div className='navBarUsuario'>
                     <div className='navBarUsuarioCarrinho'>
                         <img onClick={() => { handleClickCart() }} src={cart} alt="Carrinho de compras" />
-                        {itensCarrinho !== 0 && itensCarrinho !== '' ? <span>{itensCarrinho}</span> : ''}
+                        {quantidadeCompras !== 0 ? <span>{quantidadeCompras}</span> : ''}
 
+                        {active ?
+                            <div className='navBarUsuarioCarrinhoDropDownMenu'>
+                                <h4>Cart</h4>
+                                <hr style={{ color: 'var(--cinza)' }} />
+                                {itensCarrinho.map((element) => (
+                                    <Item key={element.id} quantidade={element.quantidade} tn={element.imgTn1} edicao={element.edicao} preco={element.preco} desconto={element.desconto} />
+                                ))}
 
-                        {active ? <div className='navBarUsuarioCarrinhoDropDownMenu'>
-                            <h4>Cart</h4>
-                            <hr style={{ color: 'var(--cinza)' }} />
-                            <div className='DropDownMenuCarrinhoImg'>
-                                <img className="DropDownMenuCarrinhoImgTn" src={produtoSelecionado.imgTn1} alt="" />
-                                <div className='DropDownMenuCarrinhoText'>
-                                    <h3>{produtoSelecionado.edicao}</h3>
-                                    <h3>{`$${precoComDesconto} x ${itensCarrinho} `}<b style={{ color: 'black' }}>{`$${precoFinal}`}</b></h3>
+                                {/* {<Item key={produtoSelecionado.id} quantidade={produtoSelecionado.quantidade} tn={produtoSelecionado.imgTn1} edicao={produtoSelecionado.edicao} preco={produtoSelecionado.preco} desconto={produtoSelecionado.desconto} />} */}
+                                <div className="DropDownMenuBotao">
+                                    <Botao text={'Checkout'} />
                                 </div>
-                                <img className="DropDownMenuCarrinhoDelete" src={iconDelete} alt="Icone de deletar item do carrinho." />
-                            </div>
-                            {/* {Array.forEach((element)=>{<Item key={element.id} prop1={element.x}/>})} */}
-                            <div className="DropDownMenuBotao">
-                                <Botao text={'Checkout'} />
-                            </div>
-                        </div> : ''}
+                            </div> : ''}
                     </div>
                     <img className='navBarUsuarioAvatar' onClick={() => { handleClickProfile() }} src={avatar} alt="Avatar" />
                 </div>

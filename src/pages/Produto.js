@@ -7,7 +7,7 @@ import cart from '../images/icon-cart-copy.png'
 
 export const Produto = () => {
 
-    const { dataBase, setItensCarrinho, itensCarrinho, produtosCarrinho, setProdutosCarrinho, produtoSelecionado, setProdutoSelecionado } = React.useContext(Context);
+    const { dataBase, setItensCarrinho, itensCarrinho, produtoSelecionado, setProdutoSelecionado, attCart, setAttCart } = React.useContext(Context);
 
     const [selectImg, setSelectImg] = React.useState('');
     const [counter, setCounter] = React.useState(0);
@@ -21,8 +21,9 @@ export const Produto = () => {
                 setProdutoSelecionado(element);
                 setSelectImg(element.img1)
             }
+
         })
-    }, [])
+    }, [itensCarrinho])
 
     const handleChangeImg = (event) => {
         setSelectImg(event);
@@ -40,14 +41,38 @@ export const Produto = () => {
     }
 
     const handleAddCarrinho = () => {
-        setItensCarrinho(counter);
-        setProdutosCarrinho();
+        setAttCart(!attCart);
+        let achouProduto = false;
+        let attCarrinho = itensCarrinho;
+        //Atualiza quantidade no estado global no produto selecionado
+        let produtoCopy = produtoSelecionado;
+        produtoCopy.quantidade = counter;
+        setProdutoSelecionado(produtoCopy);
+
+        attCarrinho.forEach((element) => {
+            if (element.id === produtoSelecionado.id) {
+                achouProduto = true;
+                element = produtoSelecionado;
+            }
+
+        })
+
+        if (attCarrinho[0].id === '') {
+            attCarrinho.shift();
+        }
+
+        setItensCarrinho(attCarrinho);
+        if (achouProduto === false) {
+            setItensCarrinho([...itensCarrinho, produtoSelecionado]);
+        }
+        // console.log(itensCarrinho)
+        // console.log(produtoSelecionado)
     }
 
     return (
         <section className='produtoContainerBg'>
             <div className='produtoContainer'>
-                {console.log(produtoSelecionado)}
+                {/* {console.log(produtoSelecionado)} */}
                 <div className='produtoImgs'>
                     <div className='produtoImgsMain'>
                         <img src={selectImg} alt="Imagem do produto" />

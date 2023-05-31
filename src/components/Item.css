@@ -1,0 +1,26 @@
+.DropDownMenuCarrinhoImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+
+}
+
+.DropDownMenuCarrinhoImgTn {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.DropDownMenuCarrinhoText {
+    display: flex;
+    flex-direction: column;
+    color: var(--cinza);
+    font-size: 0.8rem;
+    min-width: 150px;
+}
+
+.DropDownMenuCarrinhoDelete {
+    cursor: pointer;
+}

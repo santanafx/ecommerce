@@ -84,7 +84,6 @@
 }
 
 .navBarUsuarioCarrinhoDropDownMenu {
-
     position: absolute;
     background-color: var(--branco);
     border-radius: 20px;
@@ -98,32 +97,6 @@
 
     margin: 15px 30px;
     font-size: 1.1rem;
-}
-
-.DropDownMenuCarrinhoImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 30px;
-
-}
-
-.DropDownMenuCarrinhoText {
-    display: flex;
-    flex-direction: column;
-    color: var(--cinza);
-    font-size: 0.8rem;
-}
-
-.DropDownMenuCarrinhoImgTn {
-
-    width: 60px;
-    height: 60px;
-    border-radius: 5px;
-}
-
-.DropDownMenuCarrinhoDelete {
-    cursor: pointer;
 }
 
 .DropDownMenuBotao {
