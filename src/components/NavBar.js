@@ -26,7 +26,7 @@ export const NavBar = () => {
         // console.log(itensCarrinho)
         // console.log(quantidadeCompras)
 
-    }, [attCart])
+    }, [attCart, itensCarrinho])
 
     const handleClickCart = () => {
         setActive(!active);
@@ -60,10 +60,8 @@ export const NavBar = () => {
                                 <h4>Cart</h4>
                                 <hr style={{ color: 'var(--cinza)' }} />
                                 {itensCarrinho.map((element) => (
-                                    <Item key={element.id} quantidade={element.quantidade} tn={element.imgTn1} edicao={element.edicao} preco={element.preco} desconto={element.desconto} />
+                                    <Item key={element.id} id={element.id} quantidade={element.quantidade} tn={element.imgTn1} edicao={element.edicao} preco={element.preco} desconto={element.desconto} />
                                 ))}
-
-                                {/* {<Item key={produtoSelecionado.id} quantidade={produtoSelecionado.quantidade} tn={produtoSelecionado.imgTn1} edicao={produtoSelecionado.edicao} preco={produtoSelecionado.preco} desconto={produtoSelecionado.desconto} />} */}
                                 <div className="DropDownMenuBotao">
                                     <Botao text={'Checkout'} />
                                 </div>
