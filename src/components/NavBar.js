@@ -54,23 +54,21 @@ export const NavBar = () => {
                     <div className='navBarUsuarioCarrinho'>
                         <img onClick={() => { handleClickCart() }} src={cart} alt="Carrinho de compras" />
                         {quantidadeCompras !== 0 ? <span>{quantidadeCompras}</span> : ''}
-
-                        {active ?
-                            <div className='navBarUsuarioCarrinhoDropDownMenu'>
-                                <h4>Cart</h4>
-                                <hr style={{ color: 'var(--cinza)' }} />
-                                {quantidadeCompras > 0 ?
-                                    <div>
-                                        {itensCarrinho.map((element) => (
-                                            <Item key={element.id} id={element.id} quantidade={element.quantidade} tn={element.imgTn1} edicao={element.edicao} preco={element.preco} desconto={element.desconto} />
-                                        ))}
-                                        <div div div className="DropDownMenuBotao">
-                                            <Botao text={'Checkout'} />
-                                        </div>
+                        <div className={active ? 'navBarUsuarioCarrinhoDropDownMenu' : 'navBarUsuarioCarrinhoDropDownMenuDes'}>
+                            <h4>Cart</h4>
+                            <hr style={{ color: 'var(--cinza)' }} />
+                            {quantidadeCompras > 0 ?
+                                <div>
+                                    {itensCarrinho.map((element) => (
+                                        <Item key={element.id} id={element.id} quantidade={element.quantidade} tn={element.imgTn1} edicao={element.edicao} preco={element.preco} desconto={element.desconto} />
+                                    ))}
+                                    <div className="DropDownMenuBotao">
+                                        <Botao text={'Checkout'} />
                                     </div>
-                                    : <div className='dropDownCartEmpty'>Your cart is empty.</div>}
+                                </div>
+                                : <div className='dropDownCartEmpty'>Your cart is empty.</div>}
 
-                            </div> : ''}
+                        </div>
                     </div>
                     <img className='navBarUsuarioAvatar' onClick={() => { handleClickProfile() }} src={avatar} alt="Avatar" />
                 </div>

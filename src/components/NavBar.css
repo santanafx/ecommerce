@@ -93,6 +93,10 @@
     font-size: 0.8rem;
 }
 
+.navBarUsuarioCarrinhoDropDownMenuDes {
+    display: none;
+}
+
 .navBarUsuarioCarrinhoDropDownMenu h4 {
 
     margin: 15px 30px;
