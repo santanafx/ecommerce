@@ -99,6 +99,16 @@
     font-size: 1.1rem;
 }
 
+.dropDownCartEmpty {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cinza);
+}
+
 .DropDownMenuBotao {
     display: flex;
     justify-content: center;
