@@ -57,11 +57,14 @@ export const Produto = () => {
 
         })
 
-        if (attCarrinho[0].id === '') {
+        console.log(attCarrinho)
+        if (attCarrinho !== undefined && attCarrinho.length !== 0 && attCarrinho[0].id === '') {
             attCarrinho.shift();
         }
 
+
         setItensCarrinho(attCarrinho);
+
         if (achouProduto === false) {
             setItensCarrinho([...itensCarrinho, produtoSelecionado]);
         }

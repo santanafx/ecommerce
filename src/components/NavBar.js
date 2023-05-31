@@ -11,7 +11,7 @@ import { Item } from './Item'
 
 export const NavBar = () => {
 
-    const { itensCarrinho, produtoSelecionado, attCart } = useContext(Context);
+    const { itensCarrinho, attCart } = useContext(Context);
     const [active, setActive] = React.useState(false);
     const [quantidadeCompras, setQuantidadeCompras] = React.useState();
     // const [copyItensCarrinho, setCopyItensCarrinho] = React.useState();

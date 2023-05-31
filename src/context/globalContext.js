@@ -84,7 +84,7 @@ export const ContextProvider = ({ children }) => {
 
     const [attCart, setAttCart] = React.useState(false);
 
-    return (<Context.Provider value={{ dataBase, itensCarrinho, setItensCarrinho, produtoSelecionado, setProdutoSelecionado, attCart, setAttCart }}>
+    return (<Context.Provider value={{ dataBase, setDataBase, itensCarrinho, setItensCarrinho, produtoSelecionado, setProdutoSelecionado, attCart, setAttCart }}>
         {children}
     </Context.Provider>
 
