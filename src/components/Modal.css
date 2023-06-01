@@ -133,3 +133,12 @@
 .modalClose:hover {
     background-image: url(../images/icon-close-orange.svg);
 }
+
+::-moz-selection {
+    background: transparent;
+}
+
+::selection {
+
+    background: transparent;
+}

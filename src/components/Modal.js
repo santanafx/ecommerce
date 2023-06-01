@@ -33,7 +33,7 @@ export const Modal = ({ active, setActive, tn1, tn2, tn3, tn4, img1, img2, img3,
 
     return (
         <>
-            {active ? <div className='modalContainerBg'>
+            {active ? <div disabled className='modalContainerBg'>
                 <div className='modalContainer'>
                     <div className='modalImgs'>
                         <div className='modalImgsMain'>
