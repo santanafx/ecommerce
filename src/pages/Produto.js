@@ -18,6 +18,8 @@ export const Produto = () => {
     React.useEffect(() => {
         dataBase.forEach((element) => {
             if (element.id === params.id) {
+                console.log(element.id)
+                console.log(params.id)
                 setProdutoSelecionado(element);
                 setSelectImg(element.img1)
             }
@@ -57,25 +59,20 @@ export const Produto = () => {
 
         })
 
-        console.log(attCarrinho)
         if (attCarrinho !== undefined && attCarrinho.length !== 0 && attCarrinho[0].id === '') {
             attCarrinho.shift();
         }
-
 
         setItensCarrinho(attCarrinho);
 
         if (achouProduto === false) {
             setItensCarrinho([...itensCarrinho, produtoSelecionado]);
         }
-        // console.log(itensCarrinho)
-        // console.log(produtoSelecionado)
     }
 
     return (
         <section className='produtoContainerBg'>
             <div className='produtoContainer'>
-                {/* {console.log(produtoSelecionado)} */}
                 <div className='produtoImgs'>
                     <div className='produtoImgsMain'>
                         <img src={selectImg} alt="Imagem do produto" />

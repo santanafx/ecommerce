@@ -6,13 +6,13 @@ export const Inicio = () => {
     const navigate = useNavigate();
 
     const handleClickProd1 = () => {
-        navigate('/produto/sapato')
+        navigate('/produto/fallLimited')
     }
     const handleClickProd2 = () => {
-        navigate('/produto/mochila')
+        navigate('/produto/xtry')
     }
     const handleClickProd3 = () => {
-        navigate('/produto/bone')
+        navigate('/produto/kolosh')
     }
     return (
         <>

@@ -14,23 +14,18 @@ export const NavBar = () => {
     const { itensCarrinho, attCart } = useContext(Context);
     const [active, setActive] = React.useState(false);
     const [quantidadeCompras, setQuantidadeCompras] = React.useState();
-    // const [copyItensCarrinho, setCopyItensCarrinho] = React.useState();
-
 
     React.useEffect(() => {
         let itensTotais = 0;
-        // setCopyItensCarrinho(itensCarrinho);
         itensCarrinho.forEach((element) => (
             itensTotais = itensTotais + element.quantidade))
         setQuantidadeCompras(itensTotais);
-        // console.log(itensCarrinho)
-        // console.log(quantidadeCompras)
+
 
     }, [attCart, itensCarrinho])
 
     const handleClickCart = () => {
         setActive(!active);
-        console.log(active)
     }
 
     const handleClickProfile = () => {
@@ -38,7 +33,6 @@ export const NavBar = () => {
     }
     return (
         <section className='navBarContainerBg'>
-            {/* {console.log(copyItensCarrinho)} */}
             <nav className='navBarContainer'>
                 <div className="navBarLogo">
                     <img src={logo} alt="Logo do site" />
