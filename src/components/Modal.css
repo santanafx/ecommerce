@@ -1,0 +1,135 @@
+.modalContainerBg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modalContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.modalImgs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* align-items: center; */
+    /* flex-basis: 50%; */
+}
+
+.modalImgsMain {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 550px;
+
+}
+
+.modalImgsMain img {
+    border-radius: 20px;
+    margin-right: 0 !important;
+    width: 550px;
+}
+
+.modalImgsTn {
+    display: flex;
+    justify-content: center;
+    gap: 1.9rem;
+
+}
+
+.modalImgsTn img {
+    width: 90px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 0 !important;
+}
+
+
+.modalImgsTn img:hover {
+    /* opacity: 0.5; */
+
+    filter: sepia(50%) brightness(100%);
+}
+
+.modalImgsTn img:focus {
+
+    filter: sepia(50%) brightness(100%);
+    outline: var(--laranja) solid 2px;
+}
+
+.modalNext {
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: var(--branco);
+    background-image: url(../images/icon-next.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+
+}
+
+.modalNext:hover {
+    background-image: url(../images/icon-next-orange.svg);
+}
+
+.modalPrevious {
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--branco);
+    background-color: var(--branco);
+    background-image: url(../images/icon-previous.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.modalPrevious:hover {
+    background-image: url(../images/icon-previous-orange.svg);
+}
+
+.modalClose {
+    position: absolute;
+    top: 20px;
+    right: 210px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url(../images/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.modalClose:hover {
+    background-image: url(../images/icon-close-orange.svg);
+}

@@ -7,16 +7,13 @@
 
 .produtoContainer {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     width: 1115px;
-    /* height: 480px; */
 }
 
 .produtoImgs {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     flex-basis: 50%;
 }
 
@@ -35,7 +32,6 @@
     display: flex;
     justify-content: center;
     gap: 1.9rem;
-
 }
 
 .produtoImgsTn img {
@@ -101,7 +97,6 @@
 .produtoDescricao h2 {
     color: var(--preto);
     font-size: 2rem;
-
 }
 
 .produtoDescricao h4 {
@@ -151,7 +146,6 @@
     text-align: center;
     height: 60px;
     width: 70px;
-
 }
 
 .produtoDescricaoAddCar {
@@ -172,5 +166,4 @@
 
 .produtoDescricaoAddCar img {
     margin-right: 20px;
-
 }

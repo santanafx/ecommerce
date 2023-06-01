@@ -60,7 +60,7 @@ export const NavBar = () => {
                             {quantidadeCompras > 0 ?
                                 <div>
                                     {itensCarrinho.map((element) => (
-                                        <Item key={element.id} id={element.id} quantidade={element.quantidade} tn={element.imgTn1} edicao={element.edicao} preco={element.preco} desconto={element.desconto} />
+                                        <Item key={element.id} id={element.id} quantidade={element.quantidade} tn1={element.imgTn1} tn2={element.imgTn2} tn3={element.imgTn3} tn4={element.imgTn4} img1={element.img1} img2={element.img2} img3={element.img3} img4={element.img4} edicao={element.edicao} preco={element.preco} desconto={element.desconto} />
                                     ))}
                                     <div className="DropDownMenuBotao">
                                         <Botao text={'Checkout'} />

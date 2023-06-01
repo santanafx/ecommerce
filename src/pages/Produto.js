@@ -81,10 +81,10 @@ export const Produto = () => {
                         <img src={selectImg} alt="Imagem do produto" />
                     </div>
                     <div className='produtoImgsTn'>
-                        <img className='img1' onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img1} tabIndex="0" src={produtoSelecionado.imgTn1} alt="Imagem thumbnail do produto" />
-                        <img className='img2' tabIndex="1" onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img2} src={produtoSelecionado.imgTn2} alt="Imagem thumbnail do produto" />
-                        <img className='img3' tabIndex="2" onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img3} src={produtoSelecionado.imgTn3} alt="Imagem thumbnail do produto" />
-                        <img className='img4' tabIndex="3" onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img4} src={produtoSelecionado.imgTn4} alt="Imagem thumbnail do produto" />
+                        <img onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img1} tabIndex="0" src={produtoSelecionado.imgTn1} alt="Imagem thumbnail do produto" />
+                        <img tabIndex="1" onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img2} src={produtoSelecionado.imgTn2} alt="Imagem thumbnail do produto" />
+                        <img tabIndex="2" onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img3} src={produtoSelecionado.imgTn3} alt="Imagem thumbnail do produto" />
+                        <img tabIndex="3" onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img4} src={produtoSelecionado.imgTn4} alt="Imagem thumbnail do produto" />
                     </div>
                 </div>
                 <div className='produtoDescricao'>

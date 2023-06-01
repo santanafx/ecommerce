@@ -84,6 +84,7 @@
 }
 
 .navBarUsuarioCarrinhoDropDownMenu {
+    cursor: default;
     position: absolute;
     background-color: var(--branco);
     border-radius: 20px;
