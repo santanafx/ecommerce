@@ -1,14 +1,14 @@
-.aboutContainerBg {
+.notFoundContainerBg {
     display: flex;
-    margin: 80px 500px 0 500px;
     justify-content: center;
+    margin: 80px 500px 0 500px;
 }
 
-.aboutContainer {
+.notFoundContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
     color: var(--cinza);
     font-size: 1.1rem;
     font-weight: 100;

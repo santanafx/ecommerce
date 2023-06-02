@@ -1,0 +1,71 @@
+.contactContainerBg {
+    display: flex;
+    margin: 80px 500px 0 500px;
+    justify-content: center;
+}
+
+.contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    color: var(--cinza);
+    font-size: 1.1rem;
+    font-weight: 100;
+    flex-direction: column;
+}
+
+.contactIcons {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contactIcons>* {
+    font-size: 2rem;
+    margin: 5px 10px;
+    color: var(--preto);
+}
+
+.wp {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.wp:hover {
+    color: var(--cinza);
+}
+
+.gh {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gh:hover {
+    color: var(--cinza);
+}
+
+.dis {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dis:hover {
+    color: var(--cinza);
+}
+
+.lin {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lin:hover {
+    color: var(--cinza);
+}
+
+.contactAutor {
+    margin-top: 5px;
+    font-weight: bolder;
+    text-shadow: 1px 3px 8px rgb(0, 0, 0, 0.5);
+}
