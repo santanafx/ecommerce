@@ -1,8 +1,12 @@
 import React from 'react'
 import './Botao.css'
+import { useNavigate } from 'react-router-dom'
 
-export const Botao = ({ text }) => {
+export const Botao = ({ text, setActive, active }) => {
+
+    const navigate = useNavigate();
+
     return (
-        <button className='botao'>{text}</button>
+        <button onClick={() => { navigate('./checkout'); setActive(!active) }} className='botao'>{text}</button>
     )
 }

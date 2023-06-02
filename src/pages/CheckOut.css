@@ -1,0 +1,15 @@
+.checkOutContainerBg {
+    display: flex;
+    justify-content: center;
+    margin: 80px 500px 0 500px;
+}
+
+.checkOutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--cinza);
+    font-size: 1.1rem;
+    font-weight: 100;
+}

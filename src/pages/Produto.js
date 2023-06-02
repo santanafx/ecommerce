@@ -18,8 +18,6 @@ export const Produto = () => {
     React.useEffect(() => {
         dataBase.forEach((element) => {
             if (element.id === params.id) {
-                console.log(element.id)
-                console.log(params.id)
                 setProdutoSelecionado(element);
                 setSelectImg(element.img1)
             }
