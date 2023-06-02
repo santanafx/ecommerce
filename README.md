@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Sobre o projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto consistiu em criar um sistema de login, cadastro e atualização de informações do usuário. Quando a página é acessada, não existe nenhum usuário cadastrado ou logado, então, é necessário cadastrar um usuário. São feitos vários testes de validação para que o usuário cadastre seguindo um padrão desejado. Exemplo: tamanho mínimo de senha de 6 caracteres, tamanho máximo de senha de 10 caracteres, o usuário tem que ser em formato de email, etc. Uma vez que o usuário estiver logado, o menu de navegação fornece ao usuário opções de navegação (configurar e deslogar). Apertando o botão de configurar, é possível atualizar as informações do usuário. As informações do usuário, depois de cadastradas, irão aparecer também na página inicial. Caso o usuário queira deslogar e logar novamente, as informações são carregadas na página inicial sem precisar preencher novamente os campos da página de configuração.
 
-## Available Scripts
+## Acesse
 
-In the project directory, you can run:
+<a href="https://login-formulario-be49-ett5j6s85-santanafx.vercel.app/">Acesse a aplicação clicando aqui</a>.
 
-### `npm start`
+## Imagens do projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Imagem Projeto](./src/images/proj.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Imagem Projeto-1](./src/images/proj-1.png)
 
-### `npm test`
+![Imagem Projeto-2](./src/images/proj-2.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Imagem Projeto-3](./src/images/proj-3.png)
 
-### `npm run build`
+## Linguagens utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+JavaScript | React | HTML | CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<div style="display: inline_block"><br>
+  <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+<!--   <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"> -->
+  <img align="center" alt="Rafa-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+  <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+<!--   <img align="center" alt="Rafa-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img align="center" alt="Rafa-Csharp" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"> -->
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como instalar
 
-### `npm run eject`
+Para preparar o ambiente, precisaremos ter algumas coisas instaladas no computador, sendo elas:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Node.js
+<a href="https://nodejs.org/pt-br">Clique aqui para instalar o Node.js</a>.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para instalar o Node, clique no link e baixe a versão LTS (versão recomendada)
+Para verificar se foi instalado corretamente, abra o terminal e escreva node -v ou node --version
+alt text: site do Nodejs, com o botão da versão recomendada em foco por um quadrado vermelho!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Imagem node](./src/images/readme/instrucao-node.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Git
+<a href="https://git-scm.com/download/windows">Clique aqui para instalar o Git</a>.
 
-## Learn More
+Caso não tenha um terminal de preferência, recomendo utilizar o git bash. Para instalá-lo, haverá uma opção durante a instalação do git para permitir instalar o git bash
+alt text: imagem mostrando várias caixas selecionáveis. A caixa “Git Bash Here” está em evidência por um quadrado vermelho com uma seta apontada para ele
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Imagem git](./src/images/readme/instrucao-git.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para verificar se o git foi instalado corretamente, abra o terminal e escreva git --version
+Visual Studio Code
 
-### Code Splitting
+Entre no link e baixe a versão de Windows.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<a href="https://code.visualstudio.com/download">Clique aqui para instalar o Visual Studio</a>.
 
-### Analyzing the Bundle Size
+Clique com o botão direito em algum local do computador e selecione a opção Git Bash Here.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Imagem gitbash](./src/images/readme/instrucao-gitBashHere.png)
 
-### Making a Progressive Web App
+Escreva no terminal o comando abaixo e no lugar de 'cole aqui' entre no projeto do GitHub e cole o link do projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+git clone 'cole aqui o link do projeto'
 
-### Advanced Configuration
+![Imagem gitbash](./src/images/readme/instrucao-clone.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Imagem gitbash](./src/images/readme/instrucao-gitClone.png)
 
-### Deployment
+Uma pasta com o projeto desejado será adicionada a pasta em que foi escolhida.
+Clique com o botão direito em cima da pasta e selecione "Abrir com Code"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Imagem gitbash](./src/images/readme/instrucao-abrirCode.png)
 
-### `npm run build` fails to minify
+Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o terminal clicando no menu da aba superior e digite no terminal aberto o código "npm start". Uma janela do browser será aberta e o projeto será iniciado em seu computador.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Imagem gitbash](./src/images/readme/instrucao-terminal.png)
+
+![Imagem gitbash](./src/images/readme/instrucao-npm.png)
