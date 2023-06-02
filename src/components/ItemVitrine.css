@@ -1,0 +1,40 @@
+.itemVitrineContainer {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemVitrineContainer img {
+    align-self: center;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.itemVitrineContainer img:hover {
+    opacity: 0.5;
+    outline: var(--laranja) solid 2px;
+}
+
+.itemVitrineContainer h4 {
+    font-size: 1.5rem;
+
+}
+
+.itemVitrineContainer h5 {
+    color: var(--cinza);
+    text-decoration: line-through
+}
+
+.itemVitrineContainer span {
+    color: var(--laranja);
+    font-weight: 900;
+    background-color: var(--laranja-claro);
+    border-radius: 5px;
+    padding: 0 8px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+
+}

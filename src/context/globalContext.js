@@ -60,7 +60,7 @@ export const ContextProvider = ({ children }) => {
             imgTn3: xtry3Tn,
             imgTn4: xtry4Tn,
             preco: 400,
-            desconto: 50,
+            desconto: 30,
             quantidade: 0,
             categoria: 'women'
         },
@@ -77,7 +77,7 @@ export const ContextProvider = ({ children }) => {
             imgTn3: kolosh3Tn,
             imgTn4: kolosh4Tn,
             preco: 100,
-            desconto: 50,
+            desconto: 10,
             quantidade: 0,
             categoria: 'women'
         },
