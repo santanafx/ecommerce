@@ -8,13 +8,13 @@ O projeto consistiu em criar um sistema de login, cadastro e atualização de in
 
 ## Imagens do projeto
 
-![Imagem Projeto](./src/images/proj.png)
+![Imagem Projeto](./src/images/readme/proj.png)
 
-![Imagem Projeto-1](./src/images/proj-1.png)
+![Imagem Projeto-1](./src/images/readme/proj-1.png)
 
-![Imagem Projeto-2](./src/images/proj-2.png)
+![Imagem Projeto-2](./src/images/readme/proj-2.png)
 
-![Imagem Projeto-3](./src/images/proj-3.png)
+![Imagem Projeto-3](./src/images/readme/proj-3.png)
 
 ## Linguagens utilizadas
 
@@ -75,7 +75,7 @@ Clique com o botão direito em cima da pasta e selecione "Abrir com Code"
 
 ![Imagem gitbash](./src/images/readme/instrucao-abrirCode.png)
 
-Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o terminal clicando no menu da aba superior e digite no terminal aberto o código "npm start". Uma janela do browser será aberta e o projeto será iniciado em seu computador.
+Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o terminal clicando no menu da aba superior e digite no terminal aberto o código "npm install" e logo em seguida digite "npm start". Uma janela do browser será aberta e o projeto será iniciado em seu computador.
 
 ![Imagem gitbash](./src/images/readme/instrucao-terminal.png)
 
