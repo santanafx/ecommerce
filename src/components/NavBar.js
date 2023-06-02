@@ -39,10 +39,10 @@ export const NavBar = () => {
                 </div>
                 <div className='navBarMenu'>
                     <div><Link to='/'>Collections</Link></div>
-                    <div><Link to='/'>Men</Link></div>
-                    <div><Link to='/'>Women</Link></div>
-                    <div><Link to='/'>About</Link></div>
-                    <div><Link to='/'>Contact</Link></div>
+                    <div><Link to='/men'>Men</Link></div>
+                    <div><Link to='/woman'>Women</Link></div>
+                    <div><Link to='/about'>About</Link></div>
+                    <div><Link to='/contact'>Contact</Link></div>
                 </div>
                 <div className='navBarUsuario'>
                     <div className='navBarUsuarioCarrinho'>
