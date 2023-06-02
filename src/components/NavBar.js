@@ -40,7 +40,7 @@ export const NavBar = () => {
                 <div className='navBarMenu'>
                     <div><Link to='/'>Collections</Link></div>
                     <div><Link to='/men'>Men</Link></div>
-                    <div><Link to='/woman'>Women</Link></div>
+                    <div><Link to='/women'>Women</Link></div>
                     <div><Link to='/about'>About</Link></div>
                     <div><Link to='/contact'>Contact</Link></div>
                 </div>

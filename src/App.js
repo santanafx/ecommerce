@@ -6,8 +6,8 @@ import { Produto } from './pages/Produto';
 import { NotFound } from './pages/NotFound';
 import { Contact } from './pages/Contact';
 import { About } from './pages/About';
-import { Woman } from './pages/Woman';
 import { Men } from './pages/Men';
+import { Women } from './pages/Women';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/' element={<Inicio />} />
-        <Route path='/woman' element={<Woman />} />
+        <Route path='/women' element={<Women />} />
         <Route path='/men' element={<Men />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />

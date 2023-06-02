@@ -1,0 +1,11 @@
+.womenContainerBg {
+    display: flex;
+    margin: 80px 200px 0 200px;
+}
+
+.womenContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
