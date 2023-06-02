@@ -45,6 +45,7 @@ export const ContextProvider = ({ children }) => {
             preco: 250,
             desconto: 50,
             quantidade: 0,
+            categoria: 'men',
         },
         {
             id: 'xtry',
@@ -61,6 +62,7 @@ export const ContextProvider = ({ children }) => {
             preco: 400,
             desconto: 50,
             quantidade: 0,
+            categoria: 'women'
         },
         {
             id: 'kolosh',
@@ -77,6 +79,7 @@ export const ContextProvider = ({ children }) => {
             preco: 100,
             desconto: 50,
             quantidade: 0,
+            categoria: 'women'
         },
     ]);
 
@@ -95,6 +98,7 @@ export const ContextProvider = ({ children }) => {
         preco: '',
         desconto: '',
         quantidade: 0,
+        categoria: '',
     },]);
     const [produtoSelecionado, setProdutoSelecionado] = React.useState('');
 
