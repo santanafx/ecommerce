@@ -4,16 +4,12 @@
 
 ## Acesse
 
-<p align="center">
 <a href="https://login-formulario-be49-ett5j6s85-santanafx.vercel.app/">Acesse a aplicação clicando aqui</a>.
-</p>
 
 ## Imagens do projeto
 
-<div align="center">
 ![Gif Projeto](./src/videos/desktop-gif.gif)
 ![Gif Projeto](./src/videos/desktop-gif-2.gif)
-</div>
 
 ## Linguagens utilizadas
 
@@ -39,9 +35,7 @@ Para verificar se foi instalado corretamente, abra o terminal e escreva node -v 
 alt text: site do Nodejs, com o botão da versão recomendada em foco por um quadrado vermelho!
 </p>
 
-<div align="center">
-![Imagem node](./src/images/readme/instrucao-node.png)
-</div>
+<img align="center" src='./src/images/readme/instrucao-node.png'>
 
 Git
 <a href="https://git-scm.com/download/windows">Clique aqui para instalar o Git</a>.
@@ -51,9 +45,7 @@ Caso não tenha um terminal de preferência, recomendo utilizar o git bash. Para
 alt text: imagem mostrando várias caixas selecionáveis. A caixa “Git Bash Here” está em evidência por um quadrado vermelho com uma seta apontada para ele
 </p>
 
-<div align="center">
-![Imagem git](./src/images/readme/instrucao-git.png)
-</div>
+<img align="center" src='./src/images/readme/instrucao-git.png'>
 
 Para verificar se o git foi instalado corretamente, abra o terminal e escreva git --version
 Visual Studio Code
@@ -64,35 +56,23 @@ Entre no link e baixe a versão de Windows.
 
 Clique com o botão direito em algum local do computador e selecione a opção Git Bash Here.
 
-<div align="center">
-![Imagem gitbash](./src/images/readme/instrucao-gitBashHere.png)
-</div>
+<img align="center" src='./src/images/readme/instrucao-gitBashHere.png'>
 
 Escreva no terminal o comando abaixo e no lugar de 'cole aqui' entre no projeto do GitHub e cole o link do projeto.
 
 git clone 'cole aqui o link do projeto'
 
-<div align="center">
-![Imagem gitbash](./src/images/readme/instrucao-clone.png)
-</div>
+<img align="center" src='./src/images/readme/instrucao-clone.png'>
 
-<div align="center">
-![Imagem gitbash](./src/images/readme/instrucao-gitClone.png)
-</div>
+<img align="center" src='./src/images/readme/instrucao-gitClone.png'>
 
 Uma pasta com o projeto desejado será adicionada a pasta em que foi escolhida.
 Clique com o botão direito em cima da pasta e selecione "Abrir com Code"
 
-<div align="center">
-![Imagem gitbash](./src/images/readme/instrucao-abrirCode.png)
-</div>
+<img align="center" src='./src/images/readme/instrucao-abrirCode.png'>
 
 Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o terminal clicando no menu da aba superior e digite no terminal aberto o código "npm install" e logo em seguida digite "npm start". Uma janela do browser será aberta e o projeto será iniciado em seu computador.
 
-<div align="center">
-![Imagem gitbash](./src/images/readme/instrucao-terminal.png)
-</div>
+<img align="center" src='./src/images/readme/instrucao-terminal.png'>
 
-<div align="center">
-![Imagem gitbash](./src/images/readme/instrucao-npm.png)
-</div>
+<img align="center" src='./src/images/readme/instrucao-npm.png'>
