@@ -9,3 +9,18 @@
     flex-wrap: wrap;
     gap: 2rem;
 }
+
+@media screen and (max-width: 820px) {
+    .inicioContainerBg {
+        display: flex;
+        margin: 10px;
+    }
+
+    .inicioContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
