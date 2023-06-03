@@ -25,6 +25,9 @@ export const Produto = () => {
         })
     }, [itensCarrinho])
 
+    const [currentIndex, setCurrentIndex] = React.useState(0);
+    const slider = [{ img: produtoSelecionado.img1 }, { img: produtoSelecionado.img2 }, { img: produtoSelecionado.img3 }, { img: produtoSelecionado.img4 }];
+
     const handleChangeImg = (event) => {
         setSelectImg(event);
     }
@@ -68,6 +71,20 @@ export const Produto = () => {
         }
     }
 
+    const handleNext = () => {
+        const isLastSlide = currentIndex === slider.length - 1;
+        const newIndex = isLastSlide ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
+        setSelectImg(slider[newIndex].img);
+    }
+
+    const handlePrevious = () => {
+        const isFirstSlide = currentIndex === 0;
+        const newIndex = isFirstSlide ? slider.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex);
+        setSelectImg(slider[newIndex].img);
+    }
+
     return (
         <section className='produtoContainerBg'>
             <div className='produtoContainer'>
@@ -81,6 +98,8 @@ export const Produto = () => {
                         <img tabIndex="2" onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img3} src={produtoSelecionado.imgTn3} alt="Imagem thumbnail do produto" />
                         <img tabIndex="3" onClick={(event) => { handleChangeImg(event.target.getAttribute("picture")) }} picture={produtoSelecionado.img4} src={produtoSelecionado.imgTn4} alt="Imagem thumbnail do produto" />
                     </div>
+                    <div onClick={() => handleNext()} className='produtoNext'></div>
+                    <div onClick={() => handlePrevious()} className='produtoPrevious'></div>
                 </div>
                 <div className='produtoDescricao'>
                     <h3>SNEAKER COMPANY</h3>

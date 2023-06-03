@@ -100,6 +100,7 @@
     width: 360px;
     height: auto;
     font-size: 0.8rem;
+    z-index: 998;
 }
 
 .navBarUsuarioCarrinhoDropDownMenuDes {
@@ -167,13 +168,10 @@
         z-index: 1002;
     }
 
-
-
     .navBarMenuDropDownAct div {
         margin-left: 25px;
         margin-top: 15px;
         font-weight: 700;
-
     }
 
     .navBarMenuDropDownAct a {
@@ -184,7 +182,6 @@
         margin-bottom: 20px;
         cursor: pointer;
     }
-
 
     .navBarLogo {
         flex-basis: 40%;
