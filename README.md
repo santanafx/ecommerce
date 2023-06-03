@@ -4,7 +4,7 @@ O projeto consistiu em criar uma loja virtual. Quando a página é acessada, tod
 
 ## Acesse
 
-<a href="https://login-formulario-be49-ett5j6s85-santanafx.vercel.app/">Acesse a aplicação clicando aqui</a>.
+<a href="https://ecommerce-chi-dusky-59.vercel.app/">Acesse a aplicação clicando aqui</a>.
 
 ## Imagens do projeto
 
