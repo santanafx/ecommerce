@@ -8,13 +8,7 @@ O projeto consistiu em criar uma loja virtual. Quando a página é acessada, tod
 
 ## Imagens do projeto
 
-![Imagem Projeto](./src/images/readme/proj.png)
-
-![Imagem Projeto-1](./src/images/readme/proj-1.png)
-
-![Imagem Projeto-2](./src/images/readme/proj-2.png)
-
-![Imagem Projeto-3](./src/images/readme/proj-3.png)
+![Gif Projeto](./src/videos/desktop-gif.gif)
 
 ## Linguagens utilizadas
 
