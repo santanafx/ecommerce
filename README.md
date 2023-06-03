@@ -1,6 +1,7 @@
 # Sobre o projeto
 
-O projeto consistiu em criar uma loja virtual. Quando a página é acessada, todos os itens das coleções "Men" e "Women" são mostrados na página inicial (Collections). Os itens há venda são todos renderizados com informações coletadas de um banco de dados que contém todas as informações do protudo, como, preço, desconto, imagens do produto, categoria, coleção, etc. O menu de navegação fornece ao usuário opções de navegação para filtrar os itens de acordo com sua vontade. Quando um item é selecionado, é aberto a página com informações do produto, preço, desconto e funcionalidade de adicionar um determinado número de itens no carrinho de comprar. Os itens no carrinho de compras são atualizados dinâmicamente no icone de carrinho do menu superior. É possível clicar em cima da imagem do produto desejado no carrinho para ver todas as imagens do produto.
+<p align="justify">O projeto consistiu em criar uma loja virtual. Quando a página é acessada, todos os itens das coleções "Men" e "Women" são mostrados na página inicial (Collections). Os itens há venda são todos renderizados com informações coletadas de um banco de dados que contém todas as informações do protudo, como, preço, desconto, imagens do produto, categoria, coleção, etc. O menu de navegação fornece ao usuário opções de navegação para filtrar os itens de acordo com sua vontade. Quando um item é selecionado, é aberto a página com informações do produto, preço, desconto e funcionalidade de adicionar um determinado número de itens no carrinho de comprar. Os itens no carrinho de compras são atualizados dinâmicamente no icone de carrinho do menu superior. É possível clicar em cima da imagem do produto desejado no carrinho para ver todas as imagens do produto. </p>
+
 
 ## Acesse
 
