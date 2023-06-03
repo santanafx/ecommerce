@@ -34,6 +34,7 @@ export const NavBar = () => {
         <section className='navBarContainerBg'>
             <nav className='navBarContainer'>
                 <div className='navBarMenuDropDown' >
+                    <div className={menuActive ? 'navBarMenuDropDownDark' : ''}></div>
                     <img onClick={() => setMenuActive(!menuActive)} src={menu} alt="Icone de menu." />
                     <div className={menuActive ? 'navBarMenuDropDownAct' : 'navBarMenuDropDownDes'}>
                         <div><img onClick={() => setMenuActive(!menuActive)} src={close} alt="Icone de fechar menu." /></div>

@@ -69,3 +69,18 @@
     font-weight: bolder;
     text-shadow: 1px 3px 8px rgb(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 820px) {
+    .contactContainerBg {
+        display: flex;
+        margin: 30px;
+    }
+
+    .contactContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+}

@@ -1,5 +1,6 @@
 .womenContainerBg {
     display: flex;
+    justify-content: center;
     margin: 80px 200px 0 200px;
 }
 
@@ -8,4 +9,19 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+}
+
+@media screen and (max-width: 820px) {
+    .womenContainerBg {
+        display: flex;
+        margin: 10px;
+    }
+
+    .womenContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 }
