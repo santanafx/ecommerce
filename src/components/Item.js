@@ -26,7 +26,7 @@ export const Item = ({ quantidade, tn1, tn2, tn3, tn4, img1, img2, img3, img4, e
 
     return (
         <div className='DropDownMenuCarrinhoImg'>
-            <img onClick={() => { setActive(!active) }} className="DropDownMenuCarrinhoImgTn" src={tn1} alt="" />
+            <img onClick={() => { setActive(!active) }} className="DropDownMenuCarrinhoImgTn" src={tn1} alt="Thumbnail da imagem do produto no carrinho." />
             <div className='DropDownMenuCarrinhoText'>
                 <h3>{edicao}</h3>
                 <h3>{`$${precoComDesconto} x ${quantidade} `}<b style={{ color: 'black' }}>{`$${precoFinal}`}</b></h3>

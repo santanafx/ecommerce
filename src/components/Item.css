@@ -24,3 +24,15 @@
 .DropDownMenuCarrinhoDelete {
     cursor: pointer;
 }
+
+@media screen and (max-width: 820px) {
+
+    .DropDownMenuCarrinhoImg {
+        cursor: default;
+    }
+
+    .DropDownMenuCarrinhoImgTn {
+        pointer-events: none;
+    }
+
+}
