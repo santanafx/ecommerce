@@ -35,15 +35,15 @@
 <p align="justify">
   Os principais objetivos deste projeto foram:
   
-  1- Desenvolver habilidades de CSS.
-  2- Adquirir conhecimento de Javascript/React.
-  3- Construir um menu lateral.
-  4- Construir um modal.
-  5- Construir interface de troca de imagem através de botões.
-  6- Construir um carrinho de compras.
-  7- Separar itens por categoria.
-  8- Utilizar media query para atender requisitos de responsividade.
-  9- Praticar o uso de hooks do react (useState,useEffect,useContext).
+  1. Desenvolver habilidades de CSS.
+  2. Adquirir conhecimento de Javascript/React.
+  3. Construir um menu lateral.
+  4. Construir um modal.
+  5. Construir interface de troca de imagem através de botões.
+  6. Construir um carrinho de compras.
+  7. Separar itens por categoria.
+  8. Utilizar media query para atender requisitos de responsividade.
+  9. Praticar o uso de hooks do react (useState,useEffect,useContext).
 </p>
 
 
