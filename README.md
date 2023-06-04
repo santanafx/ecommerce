@@ -17,7 +17,7 @@
 
 - [Sobre o projeto](#id01)
 - [Acesse](#id02)
-- [Acesse](#id03)
+- [Objetivos](#id03)
 - [Imagens do projeto](#id04)
 - [Linguagens utilizadas](#id05)
 - [Como instalar](#id06)
