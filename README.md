@@ -17,10 +17,11 @@
 
 - [Sobre o projeto](#id01)
 - [Acesse](#id02)
-- [Imagens do projeto](#id03)
-- [Linguagens utilizadas](#id04)
-- [Como instalar](#id05)
-- [Sobre o autor](#id06)
+- [Acesse](#id03)
+- [Imagens do projeto](#id04)
+- [Linguagens utilizadas](#id05)
+- [Como instalar](#id06)
+- [Sobre o autor](#id07)
 
 # 🚀 Sobre o projeto <a name="id01"></a>
 
@@ -30,7 +31,7 @@
 
 <a href="https://login-formulario-be49-ett5j6s85-santanafx.vercel.app/">Acesse a aplicação clicando aqui</a>.
 
-## ✔️ Objetivos
+## ✔️ Objetivos <a name="id03"></a>
 <p align="justify">
   Os principais objetivos deste projeto foram:
   
@@ -46,12 +47,12 @@
 </p>
 
 
-## ☑️ Imagens do projeto <a name="id03"></a>
+## ☑️ Imagens do projeto <a name="id04"></a>
 
 ![Gif Projeto](./src/videos/desktop-gif.gif)
 ![Gif Projeto](./src/videos/desktop-gif-2.gif)
 
-## 📝 Linguagens utilizadas<a name="id04"></a>
+## 📝 Linguagens utilizadas<a name="id05"></a>
 
 JavaScript | React | HTML | CSS
 
@@ -62,7 +63,7 @@ JavaScript | React | HTML | CSS
   <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div>
 
-## 🛠 Como instalar<a name="id05"></a>
+## 🛠 Como instalar<a name="id06"></a>
 
 Para preparar o ambiente, precisaremos ter algumas coisas instaladas no computador, sendo elas:
 
@@ -117,7 +118,7 @@ Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o termin
 
 <img align="center" src='./src/images/readme/instrucao-npm.png'>
 
-## 😎 Sobre o autor<a name="id06"></a>
+## 😎 Sobre o autor<a name="id07"></a>
 
 - Linkedin - [Lucas Santana Figueiredo](https://www.linkedin.com/in/lucas-santana-figueiredo/)
 - GitHub - [santanafx](https://github.com/santanafx)
