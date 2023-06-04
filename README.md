@@ -1,15 +1,15 @@
 <p align="center">
   <image
-  src="https://img.shields.io/github/languages/count/santanafx/image-handler"
+  src="https://img.shields.io/github/languages/count/santanafx/ecommerce"
   />
   <image
-  src="https://img.shields.io/github/languages/top/santanafx/image-handler"
+  src="https://img.shields.io/github/languages/top/santanafx/ecommerce"
   />
   <image
-  src="https://img.shields.io/github/last-commit/santanafx/image-handler"
+  src="https://img.shields.io/github/last-commit/santanafx/ecommerce"
   />
   <image
-  src="https://img.shields.io/github/watchers/santanafx/image-handler?style=social"
+  src="https://img.shields.io/github/watchers/santanafx/ecommerce?style=social"
   />
 </p>
 
