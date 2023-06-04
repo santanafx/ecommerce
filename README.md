@@ -1,17 +1,57 @@
-# Sobre o projeto
+<p align="center">
+  <image
+  src="https://img.shields.io/github/languages/count/santanafx/image-handler"
+  />
+  <image
+  src="https://img.shields.io/github/languages/top/santanafx/image-handler"
+  />
+  <image
+  src="https://img.shields.io/github/last-commit/santanafx/image-handler"
+  />
+  <image
+  src="https://img.shields.io/github/watchers/santanafx/image-handler?style=social"
+  />
+</p>
+
+# 📋 Índice
+
+- [Sobre o projeto](#id01)
+- [Acesse](#id02)
+- [Imagens do projeto](#id03)
+- [Linguagens utilizadas](#id04)
+- [Como instalar](#id05)
+- [Sobre o autor](#id06)
+
+# 🚀 Sobre o projeto <a name="id01"></a>
 
 <p align="justify">O projeto consistiu em criar uma loja virtual. Quando a página é acessada, todos os itens das coleções "Men" e "Women" são mostrados na página inicial (Collections). Os itens há venda são todos renderizados com informações coletadas de um banco de dados que contém todas as informações do protudo, como, preço, desconto, imagens do produto, categoria, coleção, etc. O menu de navegação fornece ao usuário opções de navegação para filtrar os itens de acordo com sua vontade. Quando um item é selecionado, é aberto a página com informações do produto, preço, desconto e funcionalidade de adicionar um determinado número de itens no carrinho de comprar. Os itens no carrinho de compras são atualizados dinâmicamente no icone de carrinho do menu superior. É possível clicar em cima da imagem do produto desejado no carrinho para ver todas as imagens do produto. </p>
 
-## Acesse
+## 🏆 Acesse <a name="id02"></a>
 
 <a href="https://login-formulario-be49-ett5j6s85-santanafx.vercel.app/">Acesse a aplicação clicando aqui</a>.
 
-## Imagens do projeto
+## ✔️ Objetivos
+<p align="justify">
+  Os principais objetivos deste projeto foram:
+  
+  1- Desenvolver habilidades de CSS.
+  2- Adquirir conhecimento de Javascript/React.
+  3- Construir um menu lateral.
+  4- Construir um modal.
+  5- Construir interface de troca de imagem através de botões.
+  6- Construir um carrinho de compras.
+  7- Separar itens por categoria.
+  8- Utilizar media query para atender requisitos de responsividade.
+  9- Praticar o uso de hooks do react (useState,useEffect,useContext).
+</p>
+
+
+## ☑️ Imagens do projeto <a name="id03"></a>
 
 ![Gif Projeto](./src/videos/desktop-gif.gif)
 ![Gif Projeto](./src/videos/desktop-gif-2.gif)
 
-## Linguagens utilizadas
+## 📝 Linguagens utilizadas<a name="id04"></a>
 
 JavaScript | React | HTML | CSS
 
@@ -22,7 +62,7 @@ JavaScript | React | HTML | CSS
   <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div>
 
-## Como instalar
+## 🛠 Como instalar<a name="id05"></a>
 
 Para preparar o ambiente, precisaremos ter algumas coisas instaladas no computador, sendo elas:
 
@@ -76,3 +116,8 @@ Uma vez que o Visual studio estiver aberto com o projeto desejado, abra o termin
 <img align="center" src='./src/images/readme/instrucao-terminal.png'>
 
 <img align="center" src='./src/images/readme/instrucao-npm.png'>
+
+## 😎 Sobre o autor<a name="id06"></a>
+
+- Linkedin - [Lucas Santana Figueiredo](https://www.linkedin.com/in/lucas-santana-figueiredo/)
+- GitHub - [santanafx](https://github.com/santanafx)
